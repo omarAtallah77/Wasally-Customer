@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'core/theme.dart';
 import 'features/Auth/SignIn/presentation/SignInLayout.dart';
 
 void main() {
@@ -15,6 +16,10 @@ class my_app extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Wasaly App',
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.light, // or system
       home:SignInlayout(),
     );
   }
