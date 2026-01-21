@@ -3,7 +3,7 @@ class Validation {
     if (value == null || value.isEmpty) {
       return 'This field is required';
     }
-    if (inputType == "email") {
+    if (inputType == "Email") {
       return validateEmail(value);
     } else if (inputType == "password") {
       return validatePassword(value);

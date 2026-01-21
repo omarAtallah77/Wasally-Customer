@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 
+import '../../../HomeScreen/presentation/HomeScreenLayout.dart';
 import '../../SignUp/presentation/SignUpLayout.dart';
 import '../../widgets.dart';
 import '../core/validation.dart';
@@ -42,7 +43,7 @@ class SignInlayout extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
-                      // Form is valid, perform sign-in logic here
+                      Get.to(Homescreenlayout());
                     } else {
                       print("not valid");
                     }
